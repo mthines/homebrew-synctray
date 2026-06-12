@@ -1,4 +1,4 @@
-cask "synctray-beta" do
+cask "synctray-beta@0.39.0-beta.23.2" do
   version "0.39.0-beta.23.2"
   sha256 "948301bfb109e64f0ec47fb1c964569f23c1bfd596dfa41033943a4cced17fe8"
 
