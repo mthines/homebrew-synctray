@@ -1,13 +1,13 @@
 cask "synctray" do
-  version "0.34.0"
-  sha256 "b263130ea07d5b42d8cc204a0c2ece7c61af2eba546fb44e507f97990c279f02"
+  version "0.35.0"
+  sha256 "2569d37e5ca0889f402ce5bd648afc338bf44a10fede789280665dc328a72464"
 
   url "https://github.com/mthines/sync-tray/releases/download/v#{version}/SyncTray-v#{version}-macOS.zip"
   name "SyncTray"
   desc "Menu bar app for automatic two-way folder sync with 70+ cloud providers via rclone"
   homepage "https://github.com/mthines/sync-tray"
 
-  depends_on macos: ">= :ventura"
+  depends_on macos: :ventura
 
   # Remove quarantine attribute (app is not notarized yet)
   preflight do
