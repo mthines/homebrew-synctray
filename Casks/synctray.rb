@@ -1,6 +1,6 @@
 cask "synctray" do
-  version "0.51.0"
-  sha256 "ff3898960ef1d79d301a01767ee5c8ad1f171a10f7dbc5886337c40659c1843e"
+  version "0.52.0"
+  sha256 "7eb7996a106b6045c3c008424b903122ea5f0d8adff236129e0cfd156cfb156d"
 
   url "https://github.com/mthines/sync-tray/releases/download/v#{version}/SyncTray-v#{version}-macOS.zip"
   name "SyncTray"
@@ -38,5 +38,15 @@ cask "synctray" do
       2. Configure a remote:  rclone config
 
     Then launch SyncTray and create a sync profile in Settings.
+
+    Finder "Available Offline" menu:
+      Stream (mount) profiles add a right-click "SyncTray > Available Offline" menu
+      in Finder. SyncTray reloads Finder for you after an install or upgrade, but if
+      the menu doesn't appear, restart Finder manually:
+
+        killall Finder
+
+      On a first install you must also enable the extension once under
+      System Settings > General > Login Items & Extensions > Extensions.
   EOS
 end
